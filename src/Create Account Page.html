@@ -4,37 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/Foooter.css"/>
+    <link rel="stylesheet" href="./style/Nav.css"/>
+    <link rel="stylesheet" href="./style/form.css"/>
+ 
     <title>Account Page</title>
 </head>
 <body>
-    <div class="Header">
-        <div>
-            <button>Order Online</button>
+    <nav>
+        <h1 id="logo">LOGO</h1>
+       
+        <div class="topnavNormal">
+          <span class="lines"></span>
+          <span class="lines"></span>
+          <span class="lines"></span>
         </div>
-        <img src="../image/logo.jfif" alt="Logo">
-
-        <ul>
-            <li><a href="Menu page.html">MENU</a></li>
-            <li><a href="Create Account Page.html">SIGNIN</a></li>
-            <li><a href="About.html">ABOUT</a></li>
-            <li><a href="Contact.html">CONTACT</a></li>
-
-        </ul>
         
-    </div>
+       
+        <ul id="nav-links">
+            <li><a href="index.html" class="links" >ቤት</a></li>
+         
+          <li><a href="Menu page.html" class="links">Menu</a></li>
+          <li><a href="About.html" class="links">About</a></li>
+          <li><a href="Contact.html" class="links">Contact</a></li>
+          <li><a href="Create Account Page.html" class="links" class = "active">Signup</a></li>
+        </u>
+        </nav>
     <div>
-        <img src="../image/Res image.jfif" alt="RESTOURANT">
-        <div>
+     
+        <div calss="container">
             <h2>Create a new ACCOUNT IT'S FREE AND ALWAYS WILL BE</h2>
-            <form action="index.html">
-                
-                <input type="text"   placeholder="FIST NAME" >
-                <input type="text"   placeholder="LASST NAME" >
-                <input type="text"   placeholder="MOBILE OR EMAIL ADDRESS" >
-                <input type="password"   placeholder="NEW PASSWORDD" >
-                <input type="password"   placeholder="CONFIRM PASSWORD PASSWORDD" >
-                <button>SIGNUP</button>
-            </form>
+            <form class="form-container">
+                <h2>Register Form</h2>
+                <div class="name">
+                  <input type="text" placeholder="First Name" required />
+                  <input type="text" placeholder="Last Name" required />
+                </div>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <input type="password" placeholder="Confirm Password" required />
+                <div class="terms">
+                  <input type="checkbox" /> I accept <a href="">Terms of Use</a>
+                </div>
+                <button>Register Now</button>
+              </form>
         </div>
 
         
@@ -59,28 +72,66 @@
         </div>
     </div>
     <footer>
-        <div>
-
+        <div class="footer-container">
+         
+          <div class="col-1 content-columns">
+            <h2>ምርጡ ገበታ</h2>
             <ul>
-                <li><a href="Menu page.html">MENU</a></li>
-                <li><a href="Create Account Page.html">SPACIALS</a></li>
-                <li><a href="About.html">ABOUT</a></li>
-                <li><a href="Contact.html">CONTACT</a></li>
-
+              <li><i class="fa-solid fa-map"></i> አዲስ አበባ ኢትዮጲያ</li>
+              <li><i class="fa-solid fa-phone"></i> 0111555256</li>
+              <li><i class="fa-solid fa-envelope"></i> codebustler@gmail.com</li>
+              <li><i class="fa-solid fa-globe"></i>www.codebustler.com</li>
             </ul>
+          </div>
+         
+          <div class="col-2 content-columns">
+            <h3>ጠቃሚ አገናኞች</h3>
+            <ul>
+              <li><a href="">ቤት</a></li>
+              <li><a href="">ሰለ እኛ</a></li>
+              <li><a href="">አገልግሎቶቻችን</a></li>
+              <li><a href="">የአገልግሎት ውል</a></li>
+              <li><a href="">የ ግል የሆነ</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-3 content-columns">
+            <h3>የእኛ አገልግሎቶች</h3>
+            <ul>
+              <li>የምግብ ዝግጀት</li>
+              <li>የሆቴል ሰርቪሰ</li>
+              <li>P</li>
+              <li>Marketing</li>
+              <li>Graphic Design</li>
+            </ul>
+          </div>
+         
+          <div class="col-4 content-columns">
+            <h3>የእኛ ጋዜጣ</h3>
+            <div class="col-4-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab,
+                vitae?
+              </p>
+             
+              <div class="search-input">
+                <input type="email" placeholder="Email" />
+                <input type="button" value="ሰብስክራይብ ያድርጉ" />
+              </div>
+              
+              <div class="social-links">
+                <img src="../image/icon/icons8-facebook-48.png" alt="Facebook icon">
+        <img src="../image/icon/icons8-instagram-48.png" alt="Instaram icon">
+        <img src="../image/icon/icons8-twitter-48.png" alt="Twitter">
+              
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-            <img src="../image/logo.jfif" alt="Logo">
-
+        <div class="copyright">
+          <p>&copy; <span id="year"></span> አቤል ታደሰ. All rights reserved.</p>
         </div>
-        <div class = "icon">    
-            <img src="../image/icon/icons8-facebook-48.png" alt="Facebook icon">
-            <img src="../image/icon/icons8-instagram-48.png" alt="Instaram icon">
-            <img src="../image/icon/icons8-twitter-48.png" alt="Twitter">
-
-        </div>
-
-
-    </footer>
+      </footer>
+            <scripts src="./script/index.js"></scripts>
 </body>
 </html>

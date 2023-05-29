@@ -4,46 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="./style/index.css"/>
+    <link rel="stylesheet" href="./style/Foooter.css"/>
+    <link rel="stylesheet" href="./style/Nav.css"/>
+ 
     <title>Home</title>
 </head>
 <body>
-    <div class="Header">
-        <div>
-            <button>Order Online</button>
-        </div>
-        <img src="../image/logo.jfif" alt="Logo">
-        <ul>
-            <li><a href="Menu page.html">MENU</a></li>
-            <li><a href="Create Account Page.html">SIGNIN</a></li>
-            <li><a href="About.html">ABOUT</a></li>
-            <li><a href="Contact.html">CONTACT</a></li>
-
-        </ul>
-        
-    </div>
+   
+     <nav>
+  <h1 id="logo">LOGO</h1>
+ 
+  <div class="topnavNormal">
+    <span class="lines"></span>
+    <span class="lines"></span>
+    <span class="lines"></span>
+  </div>
+  
+ 
+  <ul id="nav-links">
+    <li><a href="#" class="links" class = "active">ቤት</a></li>
+    <li><a href="Menu page.html" class="links">Menu</a></li>
+    <li><a href="About.html" class="links">About</a></li>
+    <li><a href="Contact.html" class="links">Contact</a></li>
+    <li><a href="Create Account Page.html" class="links">Signup</a></li>
+  </u>
+  </nav>
+ 
+       
+       
+   
+    
     <div class="MainHeading">
         <h2>Main Heading</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Laboriosam quisquam laborum cum vitae ipsum officia consequatur similique.
              Repudiandae harum sapiente perferendis quam impedit sed itaque rem, aspernatur officia, sunt fuga.</p>
-            <button>
+            <button class="btn1">
                 View Menu
             </button>
             </div>
-    <div class="Video">
-        <video id="video" controls preload="metadata">
-            <source src="../image/sample-mp4-file-small.mp4" type="video/mp4">
-            <source src="resources/myvideo.webm" type="video/webm">
-            <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
-            <track label="Amharic" kind="captions" srclang="de" src="resources/myvideo-de.vtt">
-         </video>
-        <video id="video" controls preload="metadata">
-            <source src="../image/sample-mp4-file-small.mp4" type="video/mp4">
-            <source src="resources/myvideo.webm" type="video/webm">
-            <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
-            <track label="Amharic" kind="captions" srclang="de" src="resources/myvideo-de.vtt">
-         </video>
+            <div class = "videoContainer">
+
+              <div class="Video">
+                <video id="video" controls preload="metadata">
+                  <source src="../image/sample-mp4-file-small.mp4" type="video/mp4">
+                  <source src="resources/myvideo.webm" type="video/webm">
+                  <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+                  <track label="Amharic" kind="captions" srclang="de" src="resources/myvideo-de.vtt">
+                </video>
+                <video id="video" controls preload="metadata">
+                  <source src="../image/sample-mp4-file-small.mp4" type="video/mp4">
+                  <source src="resources/myvideo.webm" type="video/webm">
+                  <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+                  <track label="Amharic" kind="captions" srclang="de" src="resources/myvideo-de.vtt">
+                </video>
+              </div>
        
     </div>
     <div class="info">
@@ -65,28 +81,86 @@
             <P>View Map</P>
         </div>
     </div>
+ 
     <footer>
-        <div>
-
-            <ul>
-                <li><a href="Menu page.html">MENU</a></li>
-                <li><a href="Create Account Page.html">SPACIALS</a></li>
-                <li><a href="About.html">ABOUT</a></li>
-                <li><a href="Contact.html">CONTACT</a></li>
-
-            </ul>
+      <div class="footer-container">
+       
+        <div class="col-1 content-columns">
+          <h2>ምርጡ ገበታ</h2>
+          <ul>
+            <li><i class="fa-solid fa-map"></i> አዲስ አበባ ኢትዮጲያ</li>
+            <li><i class="fa-solid fa-phone"></i> 0111555256</li>
+            <li><i class="fa-solid fa-envelope"></i> codebustler@gmail.com</li>
+            <li><i class="fa-solid fa-globe"></i>www.codebustler.com</li>
+          </ul>
         </div>
-        <div>
-            <img src="../image/logo.jfif" alt="Logo">
-
+       
+        <div class="col-2 content-columns">
+          <h3>ጠቃሚ አገናኞች</h3>
+          <ul>
+            <li><a href="index.html">ቤት</a></li>
+            <li><a href="About.html">ሰለ እኛ</a></li>
+            <li><a href="Contact.html">አገልግሎቶቻችን</a></li>
+            <li><a href="">የአገልግሎት ውል</a></li>
+            <li><a href="">የ ግል የሆነ</a></li>
+          </ul>
         </div>
-        <div class = "icon">    
-            <img src="../image/icon/icons8-facebook-48.png" alt="Facebook icon">
-            <img src="../image/icon/icons8-instagram-48.png" alt="Instaram icon">
-            <img src="../image/icon/icons8-twitter-48.png" alt="Twitter">
-
+        
+        <div class="col-3 content-columns">
+          <h3>የእኛ አገልግሎቶች</h3>
+          <ul>
+            <li>የምግብ ዝግጀት</li>
+            <li>የሆቴል ሰርቪሰ</li>
+            <li>P</li>
+            <li>Marketing</li>
+            <li>Graphic Design</li>
+          </ul>
         </div>
+       
+        <div class="col-4 content-columns">
+          <h3>የእኛ ጋዜጣ</h3>
+          <div class="col-4-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab,
+              vitae?
+            </p>
+           
+            <div class="search-input">
+              <form action="submit">
 
+                <input type="email" placeholder="Email" />
+                <input type="button" value="ሰብስክራይብ ያድርጉ" />
+              </form>
+            </div>
+            
+            <div class="social-links">
+              <img src="../image/icon/icons8-facebook-48.png" alt="Facebook icon">
+      <img src="../image/icon/icons8-instagram-48.png" alt="Instaram icon">
+      <img src="../image/icon/icons8-twitter-48.png" alt="Twitter">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="year"></span> አቤል ታደሰ. All rights reserved.</p>
+      </div>
     </footer>
+          <script src="./script/index.js">
+         
+          </script>
+             <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+                </script>
+       
+
+   
 </body>
 </html>
